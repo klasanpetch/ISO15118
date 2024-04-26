@@ -1,0 +1,10 @@
+How to use server(EVSE)
+
+The first thing you should do in the server files is go to server/src/test and open the file main_example.c to input the paths of the self-signed certificate and private key you have created. Then, set the port for communicating with the client (EV) in the server_tls function.
+
+In communication, we will use the wolfSSL library. You need to ensure that you have downloaded it.
+
+After that, you need to change the path to execute the makefile by running cd /server/Release and then execute make all. Afterward, run the program using the command ./SERVEREVSE.
+
+
+If you want to understand how each function works, you can look at that function in the code. I have added comments to the API to make it easier to use the code.
