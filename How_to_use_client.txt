@@ -1,0 +1,10 @@
+How to use Client(EV)
+
+The first thing you should do in the clients files is go to client/src/test and open the file main_example.c to input the paths of the CA files you have created. Then, set the PORT_NUMBER   for communicating with the server (EVSE) and make sure the port number matches the server's.
+
+In communication, we will use the wolfSSL library. You need to ensure that you installed it.
+
+After that, you need to change the path to execute the makefile by running cd /client/Release and then execute make all. Afterward, run the program using the command ./CLIENTEV <SERVER_IP_ADDRESS> and make sure server is already run.
+
+
+If you want to understand how each function works, you can look at that function in the code. I have added comments to the API to make it easier to use the code.
